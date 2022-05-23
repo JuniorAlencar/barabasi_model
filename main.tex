@@ -1,0 +1,61 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{setspace}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{cancel}
+\usepackage{braket}
+\usepackage{graphicx}
+\usepackage{biblatex}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\addbibresource{referencias.bib}
+
+\begin{document}
+\section{Introdução}
+Atualmente o {\it World Wide Web} é a maior rede criada pelo ser humano, com uma estimativa de um trilhão de documentos \cite{barabasi2013network}. Diversos estudos foram realizados com o foco de obter as propriedades dessas largas redes, dentre os trabalhos primordiais, está o trabalho de 1999, Jeong H. {\it et al} \cite{https://doi.org/10.48550/arxiv.cond-mat/9907038}. Nesse trabalho foi investigado a conectividade e as propriedades topológicas de larga escala, presente em redes livres de escala. O crescimento e a conexão preferencial são características que coexistem em redes reais, baseando-se nessas características, A.-L. Barábasi {\it et al} \cite{https://doi.org/10.48550/arxiv.cond-mat/9910332}, desenvolveram um modelo mínimo chamado de modelo Barabási-Albert, onde a conexão de diferentes sítios segue uma probabilidade através de uma lei de potência, com a base seguindo a conectividade do sítios já existentes. Esse modelo é amplamente usado em diversos trabalhos, dentre os quais, os trabalhamos mais recentes, onde o modelo é usado como base para o estudo de processos aleatórios com alta variação \cite{https://doi.org/10.48550/arxiv.2202.00845} e sobre o efeito da aprendizagem social observacional na vacinação e doenças \cite{https://doi.org/10.48550/arxiv.2204.11452}.
+
+
+\section{Modelo de Barabási-Albert}
+
+\subsection{Descrição do modelo}
+A rede inicial começa com $m_0$ sítios, o número de ligações inicias pode ser escolhido de forma arbitrária, o desenvolvimento da rede segue duas etapas \cite{barabasi2013network}. 
+O crescimento da rede segue da seguinte forma: para cada instante de tempo é adicionado um novo sítio a rede, onde esse novo sítio faz $m$ ligações com os sítios já existentes. A restrição para os valores de $m$ é que $m \le m_0$, essa restrição impede que dois sítios, A e B por exemplo, tenham duas conexões entre si, isto é, apenas redes simples. A probabilidade de ligação desse novo sítio com relação aos sítios já existentes segue a relação matemática
+
+\begin{equation}
+    \label{eq1}
+    \Pi(k_i) = \frac{k_i}{\sum_j k_j},
+\end{equation}
+
+onde $k_i$ representa o grau do sítio $i$ e o somatório representa a soma do grau de todos os sítios da rede. Essa probabilidade é o que caracteriza a conexão preferencial, um dos mecanismo probabilístico existentes do qual faz surgir os {\it hubs} da rede. A Eq.(\ref{eq1}) nos diz que para um novo sítio adicionado a rede, a probabilidade dele se conectar a um sítio muito conectado (valores de $k_i$ grande) é maior do que com um sítio pouco conectado (valores de $k_i$ pequenos). Todas as redes geradas nesse trabalho terão $m_0 \le 2$, não havendo sítios com {\it loop}.
+
+\subsection{Evolução da rede}
+
+s
+
+\subsection{Algoritmo}
+
+s
+
+
+
+
+
+\section{Resultados}
+c
+
+\section{Teste de Kolmogorov-Smirnov}
+d
+
+\printbibliography
+
+
+\end{document}
